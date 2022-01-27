@@ -8,7 +8,7 @@ using namespace std;
 // @lc code=start
 class Solution {
 public:
-    //TC:O(N) SC:O()
+    //TC:O(N) SC:O(1)
     vector<int> sortedSquares(vector<int>& nums) {
         //1.i^2后排序 sort(nums.begin(),nums.end())快排O(NlogN)
         //2.双指针指向2端<-(i^2)max只会在2端不会在中间
