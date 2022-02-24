@@ -15,8 +15,7 @@ public:
      * 题目有时间限制会TimeOut->答案需要取模1e9+7(1000000007),如计算初始结果为:1000000008,请返回1
      */
     int fib(int n) {
-        if (n < 2) return n;
-        return (fib(n - 1) + fib(n - 2)) % 1000000007; //每次递归的TC=O(1)
+        return n < 2 ? n : (fib(n - 1) + fib(n - 2)) % 1000000007; //每次递归的TC=O(1)
     }
 
     //TC:O(N) SC:O(N) 动态规划-dp数组
